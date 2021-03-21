@@ -1,0 +1,66 @@
+:root {
+    --dark: #16191C;
+    --dark-x: #1E2126; 
+    --light: #ffffff;
+}
+
+body {
+    font-family: 'Spartan', sans-serif;
+    font-weight: 300;
+    color: var(--light);
+}
+
+.text-light { color: var(--light) !important; }
+.bg-dark { background-color: var(--dark) !important; }
+.bg-dark-x { background-color: var(--dark-x); }
+
+.btn {
+    min-height: 3.125rem;
+    font-weight: 600;
+}
+.Lo_Mejor {
+    min-height: 3.125rem;
+    font-weight: 600;
+    font-size: 40px;
+    font-family: Spartan;
+    color:white;
+    text-shadow: 2px 2px 2px var(--dark);
+    text-align: center;
+}
+
+.Titulo {
+    min-height: 3.125rem;
+    font-weight: 600;
+    font-family: Rockwell;
+    text-decoration: underline;
+    text-align: center;
+}
+
+.Sesion {
+    min-height: 3.125rem;
+    font-weight: 600;
+    font-size: 30px;
+    font-family: Spartan;
+    text-align: left;
+}
+
+.form-control {
+    min-height: 3.125rem;
+    line-height: initial;
+}
+.form-control:focus {
+    background-color: var(--dark-x);
+    outline: none;
+}
+
+.img-1 {
+    background-image: url('img-3.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+.img-2 {
+    background-image: url('img-4.jpg');
+    background-size: cover;
+    background-position: center;
+}

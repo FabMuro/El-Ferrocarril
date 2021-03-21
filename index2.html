@@ -1,0 +1,82 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="css/style.css"/>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/css/bootstrap.min.css" integrity="sha384-r4NyP46KrjDleawBgD5tp8Y7UzmLA05oM1iAEQ17CSuDqnUK2+k9luXQOfXJCJ4I" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css2?family=Spartan:wght@300;600&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/ffec4ec2ed.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" type="text/css" href="css/Estilos.css">
+
+    <title>Inicio Sesion | ElFerrocarril</title>
+  </head>
+  <body class="bg-dark">
+      <section>
+        <div class="row g-0">           
+            <div class="col-lg-12 bg-dark d-flex flex-column align-items-end min-vh-100">
+                <div class="px-lg-5 pt-lg-4 pb-lg-3 p-4 mb-auto w-100">
+                    <h1 class="Titulo"> El Ferrocarril </h1>
+                </div>
+                <div class="align-self-center w-20 px-lg-5 py-lg-4 p-4">
+                <h1 class="Sesion">Inicio De  Sesión</h1>
+
+                <h1 class="Sesion">Elija el tipo de Usuario</h1>
+                <h1 class="Sesion">Es usted administrador</h1>
+                    <button type="submit" class="btn btn-primary w-30"><a style="color:white;font-size:20px;" href="admin">Administrador</a></button>
+
+                <h1 class="Sesion">Es usted administrador</h1>
+                    <button type="submit" class="btn btn-primary w-30"><a style="color:white;font-size:20px;" href="staff" >Empleado</a></button>
+                </div>
+                <div class="text-center px-lg-5 pt-lg-3 pb-lg-4 p-4 mt-auto w-100">
+                    <p class="d-inline-block mb-0">¿Todavia no tienes una cuenta?</p> <a href="" class="text-light font-weight-bold text-decoration-none">Crea una ahora</a>
+                </div>
+            </div>
+        </div>
+      </section>
+    <!-- Optional JavaScript -->
+    <!-- Popper.js first, then Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/js/bootstrap.min.js" integrity="sha384-oesi62hOLfzrys4LxRF63OJCXdXDipiYWBnvTl9Y9/TRlw5xlKIEHpNyvvDShgf/" crossorigin="anonymous"></script>
+    <script>
+      var boton=document.getElementById('boton');
+      var input = document.getElementById('exampleInputPassword1');
+
+      boton.addEventListener('click',mostrarContraseña);
+
+      function mostrarContraseña()
+      {
+        if(input.type=="password")
+        {
+          input.type="text"
+          boton.src="img/ocultarContra.png";
+          setTimeout("ocultar()",800);
+        }
+        else
+        {
+          input.type="password"
+          boton.src="img/ocultarContra.png";
+        }
+
+      }
+
+      function ocultar()
+      {
+        input.type="password"
+          boton.src="img/verContra.png";
+      }
+
+
+    </script>
+  </body>
+</html>
+
+<!-- Ninguna de las imagenes son de mi propiedad, a continuación están los links de los autores
+
+Imágenes en Unsplash: https://unsplash.com/@xps
+Logo Dell: https://worldvectorlogo.com/logo/dell-1
+
+-->
